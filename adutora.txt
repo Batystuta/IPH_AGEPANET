@@ -1,0 +1,332 @@
+[TITLE]
+
+[JUNCTIONS]
+ N1                                  275.0000
+ N21                                 275.0000
+ N22                                 300.0000
+ N23                                 300.0000
+ N24                                 260.0000
+ N25                                 260.0000
+ N26                                 260.0000
+ N20                                 275.0000
+ N16                                 275.0000
+ N4                                  275.0000
+ N9                                  275.0000
+ N19                                 275.0000
+ N17                                 275.0000
+ N3                                  275.0000
+ N18                                 275.0000
+ N7                                  275.0000
+ N11                                 275.0000
+ N10                                 275.0000
+ N555                                275.0000
+ N8                                  275.0000
+ N2                                  275.0000
+ N15                                 275.0000
+ N12                                 275.0000
+ N14                                 275.0000
+ N5                                  275.0000
+ N6                                  275.0000
+
+[RESERVOIRS]
+ ETA                                 275.0000 
+
+[TANKS]
+ RNV                                 300.0000       1.0000       0.0000       7.0000      10.0000       0.0000 
+
+[PIPES]
+ T1                              ETA                             N1                                    1.0000     300.0000     130.0000       0.0000 
+ T2                              N21                             N22                               10000.0000     300.0000     130.0000       0.0000 
+ tw1                             N23                             RNV                                   1.0000     300.0000     130.0000       0.0000 
+ T3                              RNV                             N24                                   1.0000     200.0000     130.0000       0.0000 
+ tw2                             N24                             N25                                   1.0000     200.0000     130.0000       0.0000 
+ T4                              N25                             N26                                   1.0000     200.0000     130.0000       0.0000 
+ 11                              N19                             N20                                   1.0000     300.0000     130.0000       0.0000 
+ 2                               N18                             N19                                   1.0000     300.0000     130.0000       0.0000 
+ 3                               N1                              N2                                    1.0000     300.0000     130.0000       0.0000 
+ 8                               N15                             N16                                   1.0000     300.0000     130.0000       0.0000 
+ 9                               N555                            N16                                   1.0000     300.0000     130.0000       0.0000 
+ 10                              N10                             N19                                   1.0000     300.0000     130.0000       0.0000 
+ 13                              N8                              N9                                    1.0000     300.0000     130.0000       0.0000 
+ 14                              N8                              N11                                   1.0000     300.0000     130.0000       0.0000 
+ 15                              N12                             N7                                    1.0000     300.0000     130.0000       0.0000 
+ 17                              N4                              N8                                    1.0000     300.0000     130.0000       0.0000 
+ 18                              N7                              N14                                   1.0000     300.0000     130.0000       0.0000 
+ 21                              N1                              N5                                    1.0000     300.0000     130.0000       0.0000 
+ 22                              N6                              N7                                    1.0000     300.0000     130.0000       0.0000 
+
+[PUMPS]
+ B1                              N3                              N4                               HEAD 1
+ B2                              N555                            N17                              HEAD 1
+
+[VALVES]
+ REG8                            N22                             N23                              100000.0000   PRV       7.0000       0.0000
+ REG7                            N20                             N21                                 300.0000   FCV   10000.0000       0.0000
+ REG1                            N2                              N3                                  300.0000   FCV       0.0000       0.0000
+ REG5                            N17                             N18                                 300.0000   FCV       0.0000       0.0000
+ REG2                            N9                              N10                                 300.0000   FCV       0.0000       0.0000
+ REG6                            N11                             N12                                 300.0000   PRV       0.0000       0.0000
+ REG4                            N14                             N15                                 300.0000   FCV       0.0000       0.0000
+ REG3                            N5                              N6                                  300.0000   FCV       0.0000       0.0000
+
+[DEMANDS]
+ N1                                    0.000000    1
+ N21                                   0.000000    1
+ N22                                   0.000000    1
+ N23                                   0.000000    1
+ N24                                   0.000000    1
+ N25                                   0.000000    1
+ N26                                  18.880000    1
+ N20                                   0.000000    1
+ N16                                   0.000000    1
+ N4                                    0.000000    1
+ N9                                    0.000000    1
+ N19                                   0.000000    1
+ N17                                   0.000000    1
+ N3                                    0.000000    1
+ N18                                   0.000000    1
+ N7                                    0.000000    1
+ N11                                   0.000000    1
+ N10                                   0.000000    1
+ N555                                  0.000000    1
+ N8                                    0.000000    1
+ N2                                    0.000000    1
+ N15                                   0.000000    1
+ N12                                   0.000000    1
+ N14                                   0.000000    1
+ N5                                    0.000000    1
+ N6                                    0.000000    1
+
+[EMITTERS]
+
+[STATUS]
+ B2                              closed
+ REG1                            open
+REG5                            closed
+ REG2                            open
+REG6                            closed
+REG4                            closed
+REG3                            closed
+
+[PATTERNS]
+ 1                                     0.8660       0.8420       0.9020       1.1790       1.3600       1.5400
+ 1                                     1.6490       1.8410       1.7450       1.0470       0.8900       0.7460
+ 1                                     0.7700       0.7340       0.8540       1.2390       1.5040       1.6240
+ 1                                     1.6490       1.5760       1.4200       1.4800       1.4200       1.1670
+
+[CURVES]
+ 1                                     2.0000      40.4000
+ 1                                     4.0000      40.3000
+ 1                                     6.0000      40.2000
+ 1                                     8.0000      40.1000
+ 1                                    10.0000      40.0000
+ 1                                    12.0000      39.9000
+ 1                                    14.0000      39.7000
+ 1                                    16.0000      39.4000
+ 1                                    18.0000      38.9000
+ 1                                    20.0000      38.3000
+ 1                                    22.0000      37.8000
+ 1                                    24.0000      37.1000
+ 1                                    26.0000      36.2000
+ 1                                    28.0000      35.4000
+ 1                                    30.0000      34.5000
+ 1                                    32.0000      33.6000
+ 1                                    34.0000      32.6000
+ 1                                    36.0000      31.5000
+ 1                                    38.0000      30.4000
+ 1                                    40.0000      29.1000
+ 2                                     2.0000       7.0000
+ 2                                     4.0000      10.0000
+ 2                                     6.0000      17.0000
+ 2                                     8.0000      27.0000
+ 2                                    10.0000      47.0000
+ 2                                    12.0000      50.0000
+ 2                                    14.0000      53.0000
+ 2                                    16.0000      58.0000
+ 2                                    18.0000      60.5000
+ 2                                    20.0000      63.0000
+ 2                                    22.0000      65.5000
+ 2                                    24.0000      66.0000
+ 2                                    26.0000      67.0000
+ 2                                    28.0000      67.5000
+ 2                                    30.0000      68.0000
+ 2                                    32.0000      67.5000
+ 2                                    34.0000      67.0000
+ 2                                    36.0000      66.5000
+ 2                                    38.0000      66.0000
+ 2                                    40.0000      65.5000
+
+[CONTROLS]
+
+[QUALITY]
+
+[SOURCES]
+
+[MIXING]
+ RNV                             MIXED          1.0000
+
+[REACTIONS]
+ ORDER  BULK            1.00
+ ORDER  WALL            1
+ ORDER  TANK            1.00
+ GLOBAL BULK            0.000000
+ GLOBAL WALL            0.000000
+
+[ENERGY]
+ GLOBAL EFFIC        75.0000
+ DEMAND CHARGE       0.0000
+ PUMP B1                              PRICE   0.5000
+ PUMP B1                              EFFIC   2
+ PUMP B2                              PRICE   0.5000
+ PUMP B2                              EFFIC   2
+
+[TIMES]
+ DURATION            288:00:00
+ HYDRAULIC TIMESTEP  1:00:00
+ QUALITY TIMESTEP    0:05:00
+ REPORT TIMESTEP     1:00:00
+ REPORT START        0:00:00
+ PATTERN TIMESTEP    1:00:00
+ PATTERN START       0:00:00
+ RULE TIMESTEP       0:06:00
+ START CLOCKTIME     0:00:00
+ STATISTIC           NONE
+
+[OPTIONS]
+ UNITS               LPS
+ PRESSURE            METERS
+ HEADLOSS            H-W
+ PATTERN             1
+ UNBALANCED          CONTINUE 10
+ QUALITY             NONE
+ DEMAND MULTIPLIER   1.0000
+ EMITTER EXPONENT    0.5000
+ VISCOSITY           1.000000
+ DIFFUSIVITY         1.000000
+ SPECIFIC GRAVITY    1.000000
+ TRIALS              80
+ ACCURACY            0.00100000
+ TOLERANCE           0.01000000
+ CHECKFREQ           2
+ MAXCHECK            10
+ DAMPLIMIT           0.00000000
+
+[REPORT]
+ PAGESIZE            0
+ STATUS              FULL
+ SUMMARY             YES
+ ENERGY              NO
+ NODES               ALL
+ LINKS               NONE
+ Elevation           NO
+ Demand              PRECISION 2
+ Head                PRECISION 2
+ Pressure            PRECISION 2
+ Pressure            ABOVE 50.000000
+ Quality             PRECISION 2
+ Length              NO
+ Diameter            NO
+ Flow                PRECISION 2
+ Velocity            PRECISION 2
+ Headloss            PRECISION 2
+ Quality             NO
+ State               NO
+ Setting             NO
+ Reaction            NO
+[TAGS]
+ NODE 	N1              	275
+ NODE 	N21             	275
+ NODE 	N20             	275
+ NODE 	N16             	275
+ NODE 	N4              	275
+ NODE 	N9              	275
+ NODE 	N19             	275
+ NODE 	N17             	275
+ NODE 	N3              	275
+ NODE 	N18             	275
+ NODE 	N7              	275
+ NODE 	N11             	275
+ NODE 	N10             	275
+ NODE 	N555            	275
+ NODE 	N8              	275
+ NODE 	N2              	275
+ NODE 	N15             	275
+ NODE 	N12             	275
+ NODE 	N14             	275
+ NODE 	N5              	275
+ NODE 	N6              	275
+
+[RULES]
+RULE 1
+IF TANK RNV LEVEL <= 1
+THEN PUMP B1 STATUS IS OPEN
+
+RULE 2
+IF TANK RNV LEVEL >= 6.6
+THEN PUMP B1 STATUS IS CLOSED
+
+RULE 3
+IF SYSTEM CLOCKTIME >= 6 PM
+AND SYSTEM CLOCKTIME <= 10 PM
+THEN PUMP B1 STATUS IS CLOSED
+PRIORITY 1
+
+RULE 4
+IF SYSTEM CLOCKTIME > 10 PM
+THEN PUMP B1 STATUS IS OPEN 
+
+;RULE 5
+;IF SYSTEM CLOCKTIME >= 6 PM
+;AND SYSTEM CLOCKTIME <= 10 PM
+;THEN PUMP B2 STATUS IS CLOSED
+;PRIORITY 1
+
+;RULE 6
+;IF SYSTEM CLOCKTIME > 10 PM
+;THEN PUMP B2 STATUS IS OPEN
+
+[COORDINATES]
+;Node            	X-Coord         	Y-Coord
+ N1              	-3851.66        	7899.96         
+ N21             	-1012.08        	6815.22         
+ N22             	395.67          	8800.50         
+ N23             	1175.55         	8805.01         
+ N24             	1836.73         	5850.34         
+ N25             	2670.07         	5850.34         
+ N26             	4591.84         	5850.34         
+ N20             	-1555.60        	6810.36         
+ N16             	-2253.23        	7898.91         
+ N4              	-3849.21        	6807.46         
+ N9              	-2788.65        	6807.46         
+ N19             	-2254.62        	6810.36         
+ N17             	-2253.23        	7312.00         
+ N3              	-3849.21        	7229.63         
+ N18             	-2253.23        	7064.88         
+ N7              	-3076.96        	7898.91         
+ N11             	-3076.96        	7209.03         
+ N10             	-2500.35        	6807.46         
+ N555            	-2253.23        	7651.79         
+ N8              	-3076.96        	6807.46         
+ N2              	-3851.66        	7599.32         
+ N15             	-2500.35        	7898.91         
+ N12             	-3076.96        	7528.23         
+ N14             	-2778.36        	7898.91         
+ N5              	-3612.38        	7898.91         
+ N6              	-3302.22        	7899.96         
+ ETA             	-4569.97        	7898.91         
+ RNV             	1843.54         	8806.12         
+
+[VERTICES]
+;Link            	X-Coord         	Y-Coord
+
+[LABELS]
+;X-Coord           Y-Coord          Label & Anchor Node
+
+[BACKDROP]
+ DIMENSIONS     	0.00            	0.00            	10000.00        	10000.00        
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+
+[END]
